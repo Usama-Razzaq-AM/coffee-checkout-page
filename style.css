@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f3edeb;
+}
+
+header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 0; */
+    background-color: #43281c;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #fbf2c0;
+}
+
+main {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "i i i p p p";
+    
+}
+
+.items {
+    margin:30px 0 30px 30px;
+    padding: 30px 20px 10px;
+    grid-area: i;
+    background-color: #eee1d5;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px -5px lightblue;
+}
+
+.items .quantity {
+    margin-top: 8px;
+}
+
+.items h2 {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+    color: #885a2d;
+}
+
+.items h4 {
+    margin-bottom: 0px;
+}
+
+.items p {
+    line-height: 10px;
+}
+
+.flavor {
+    color:#B08968;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "a b b b b b c";
+    border-bottom: 2px solid #DDB892;
+}
+
+.order:last-child {
+    border-bottom: none;
+}
+
+.quantity {
+    grid-area: a;
+}
+
+.coffee-details {
+    grid-area: b;
+}
+
+.price {
+    grid-area: c;
+}
+
+.receipt {
+    margin: 30px 30px 30px 0;
+    grid-area: p;
+    display: grid;
+    grid-template-areas: 
+    " x x x"
+    "y y y"
+    "y y y";
+    grid-gap: 20px;
+}
+
+.order-name {
+    background-color: #eee1d5;
+    grid-area: x;
+    border-radius: 7px;
+    padding: 5px 20px;
+    box-shadow: 5px 5px 5px -5px lightblue;
+}
+
+.payment {
+    background-color: #eee1d5;
+    grid-area: y;
+    border-radius: 7px;
+    padding: 5px 20px;
+    box-shadow: 5px 5px 5px -5px lightblue;
+}
+
+.receipt h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color:#885a2d;
+}
+
+ input {
+    width: 100%; 
+    padding: 10px 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 2px #885a2d solid;
+    border-radius: 100px;
+    background: #eee1d5;;
+}
+
+.input-parent {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+label {
+    background: #eee1d5;
+    font-size: 11px;
+    padding : 0 2px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+}
+
+.input-parent #ccv-nmbr-id {
+    width: 35%;
+}
+
+/* --------------------footer---------------- */
+
+.bill {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px ;
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-bottom: 20px;
+    padding: 0;
+    flex-wrap: wrap;
+    /* position: absolute; */
+}
+
+.bill li div {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+} 
+
+.bill li div .title, .bill li div .cost {
+    margin: 5px 0;
+    color: #6b6764;
+    font-size: 12px;
+} 
+
+footer button {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 25px;
+    background-color: #be9c80;
+    border: none;
+}
+
+footer button p {
+    margin: 15px;
+    color: #43281c;
+}

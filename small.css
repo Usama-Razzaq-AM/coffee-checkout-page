@@ -1,0 +1,20 @@
+@media (max-width:700px) {
+    main {
+        grid-gap: 15px;
+        grid-template-areas: 
+        "i i i i i i"
+        "p p p p p p";  
+    }
+
+    main .items {
+        margin: 5px;
+    }
+    
+    main .receipt {
+        margin: 5px;
+    }
+
+    footer .bill {
+        margin: 15%;
+    }
+}
